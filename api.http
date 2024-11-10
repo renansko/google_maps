@@ -1,0 +1,15 @@
+GET http://localhost:3000/routes
+
+
+###
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+    "name": "rota teste",
+    "source_id": "ChIJs0xHu4n73JQREJrDfMTwzUM",
+    "destination_id": "ChIJOU7yqHLk3JQRwaNi8DNGXSc"
+}
+
+### 
+GET http://localhost:3000/places?text=parana, pr
