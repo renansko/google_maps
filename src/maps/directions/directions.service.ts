@@ -21,9 +21,6 @@ export class DirectionsService {
         mode: TravelMode.driving,
         key: this.configService.get('GOOGLE_MAPS_API_KEY'),
       };
-      console.log('Primeiro log');
-      console.log(originId);
-      console.log(destinationId);
       const { data } = await this.googleMapsClient.directions({
         params,
       });

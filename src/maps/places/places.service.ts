@@ -20,7 +20,6 @@ export class PlacesService {
       key: this.configService.get('GOOGLE_MAPS_API_KEY'),
     };
     const { data } = await this.googleMapsClient.findPlaceFromText({ params });
-    console.log(data);
     return data;
   }
 }
